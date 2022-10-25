@@ -6,7 +6,10 @@ import morgan from 'morgan';
 import Controller from './utils/interfaces/controller.interface';
 import ErrorMiddleware from './middleware/error.middleware';
 import helmet from 'helmet';
+
+
 class App {
+
     public express: Application;
     public port: number;
 
@@ -52,6 +55,7 @@ class App {
             console.log(`App listening on the port ${this.port}`);
         });
     }
+
 }
 
 export default App;

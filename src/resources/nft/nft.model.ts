@@ -1,5 +1,5 @@
 import {model, Schema} from "mongoose";
-import Nft from "@/resources/nft/nft.interface";
+import Nft from "../../resources/nft/nft.interface";
 
 const NftSchema = new Schema(
     {
@@ -11,6 +11,10 @@ const NftSchema = new Schema(
             type: String,
             required: true,
         },
+        imgUrl:{
+            type: String,
+            required: true,
+        }
     },
     {timestamps: true}
 );
